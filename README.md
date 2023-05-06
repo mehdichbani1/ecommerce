@@ -1,59 +1,40 @@
-# Simple Angularjs + Node.js + Docker Web app that you can test
+AngularJS Web App Backend
+This repository contains the backend code for an AngularJS web app. It provides a Dockerfile for containerization and includes commands in the package.json file to build and run the application.
 
-Simple mecommerce web App developed using Angularjs
+Prerequisites
+Node.js
+Docker
+Setup
+Clone the repository:
 
-## Files
 
-- simple/
-  - server.js      Example Express web server that calls the index.html inside the angular folder.
-  - Dockerfile        Script file for building our Docker image.
-  - package.json      Node.js package file, specifies npm dependencies.
+git clone https://github.com/your-username/your-repo.git
+Change to the backend directory:
 
-## Setup
 
-You need Node.js and Docker installed.
-
-First change to the directory and install dependencies:
-
-```bash
 cd backend
+Install the dependencies:
+
 npm install
-```
-
-## Directly run
-
-The example Node.js application is a web app, you run it directly like this:
+Directly Run
+You can run the example Node.js application directly with the following command:
 
 
-## Build and run using Docker
 
-To build the Docker image:
+npm start
+Build and Run using Docker
+To build the Docker image, use the following command:
 
-```bash
+
 npm run docker:build
-```
+To run the Docker image, execute the following command:
 
-To run the Docker image:
 
-```bash
 npm run docker:run
-```
+To check the status of the Docker containers, use the following command:
 
-
-
-To see what Docker containers you have running:
-
-```bash
 docker ps
-```
+To stop the Docker container, run the following command:
 
-To stop the container:
-
-```bash
 npm run docker:stop
-```
-To remove the container:
-
-```bash
-docker rm hellomehdi
-```
+That's it! You now have the AngularJS web app backend running locally using Docker.
